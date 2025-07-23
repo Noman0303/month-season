@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Month & Season Checker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
+  <div class="bg-white shadow-lg rounded-xl p-8 max-w-md w-full space-y-6">
+    <h1 class="text-2xl font-bold text-center text-indigo-600">📆 Month & Season Checker</h1>
+
+    <div>
+      <label for="monthInput" class="block text-gray-700 mb-2 font-medium">Enter Month Number (1–12):</label>
+      <input type="number" id="monthInput" min="1" max="12" placeholder="e.g. 5" required
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+    </div>
+
+    <button onclick="checkMonth()"
+      class="w-full bg-indigo-600 text-white font-semibold py-2 rounded-lg hover:bg-indigo-700 transition">
+      Show Results
+    </button>
+
+    <div id="resultIfElse" class="bg-indigo-50 text-indigo-800 p-3 rounded-lg text-sm"></div>
+    <div id="resultSwitch" class="bg-purple-50 text-purple-800 p-3 rounded-lg text-sm"></div>
+    <div id="resultSeasonSwitch" class="bg-green-50 text-green-800 p-3 rounded-lg text-sm"></div>
+    <div id="resultSeasonCondition" class="bg-yellow-50 text-yellow-800 p-3 rounded-lg text-sm"></div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
